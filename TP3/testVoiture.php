@@ -19,6 +19,7 @@ if (isset($_POST['matricule'],$_POST['marque'],$_POST['modele'],$_POST['annee'])
 
     $voiture = new Voiture($matricule,$marque,$modele,$annee);
     $voiture->Afficher();
+    echo $voiture;
 }
 
 else{
@@ -32,6 +33,5 @@ echo '<option value="2011">2011</option><option value="2012">2012</option><optio
 echo '<option value="2014">2014</option></select></td></tr>';
 echo '<tr><td><input type="submit" value="Valider" name="send"></td><td></td></tr>';
 echo '</table></form></body></html>';
-
 }
 ?>
