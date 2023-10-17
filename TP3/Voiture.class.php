@@ -63,5 +63,16 @@ class Voiture{
 
     }
 
+    public function __toString()
+    {
+        $text = 'Matricule: '.$this->getMatricule();
+        $text .= ' marque: '.$this->getMarque();
+        $text .= ' modele: '.$this->getModele();
+        $text .= ' annee: '.$this->getAnnee();
+
+        return $text;
+    }
+
+
 
 }
