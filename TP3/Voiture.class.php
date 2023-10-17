@@ -56,10 +56,10 @@ class Voiture{
 
     public function Afficher()
     {
-        echo "La matricule: ".$this->matricule;
-        echo "La marque: ".$this->marque;
-        echo "La modele: ".$this->modele;
-        echo "La annee: ".$this->annee;
+        echo "La matricule: ".$this->getMatricule()."<br>";
+        echo "La marque: ".$this->getMarque()."<br>";
+        echo "La modele: ".$this->getModele()."<br>";
+        echo "La annee: ".$this->getAnnee()."<br>";
 
     }
 
