@@ -17,5 +17,6 @@ echo $message->majuscule("Codeur Web");
 
 echo "<h2>Partie 2</h2>";
 
-$car1 = new Voiture("");
+$car1 = new Voiture("PL-123-AK","mercedes","AMG",2010);
+$car1->Afficher();
 
