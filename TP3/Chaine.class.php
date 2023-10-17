@@ -9,18 +9,18 @@ class Chaine{
     }
 
     public function gras(){
-        return "<b>".$this->texte."</b>"; 
+        return "<b>Gras: ".$this->texte."</b>"; 
     }
 
     public function italique(){
-        return "<i>".$this->texte."</i>";
+        return "<i>Italique: ".$this->texte."</i>";
     }
 
     public function souligne(){
-        return "<u>".$this->texte."</u>";
+        return "<u>Souligne: ".$this->texte."</u>";
     }
 
     public function majuscule($texte){
-        return strtoupper($this->texte);
+        return "Majuscule: ".strtoupper($this->texte);
     }
 }
