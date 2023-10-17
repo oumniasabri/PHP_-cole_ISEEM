@@ -26,5 +26,14 @@ class Personne{
     {
         echo $this->nom." Age = ".$age;
     }
+
+    public function __toString()
+    {
+        $text = 'Nom: '.$this->nom;
+        $text .= ' Prenom: '.$this->prenom;
+        $text .= ' Age: '.$this->age;
+
+        return $text;
+    }
     
 }
