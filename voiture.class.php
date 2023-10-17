@@ -6,11 +6,16 @@ class Voiture{
     protected $model;
 
 
-    public function __construct($mm,$c,$md)
+    public function __construct($m,$c,$md)
     {
         $this->marque = $m;
         $this->color = $c;
-        $this->model=$md;
+        $this->model = $md;
+    }
+
+    public function __destruct()
+    {
+        echo "Cette voiture est supprimée";
     }
 
     public function stop($speed)
