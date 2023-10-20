@@ -35,7 +35,6 @@ class Voiture{
         return $this->marque;
     }
 
-
     public function setModele($modele)
     {
         $this->modele = $modele;
