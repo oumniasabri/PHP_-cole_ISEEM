@@ -45,7 +45,7 @@ if (isset($_GET['id'])) {
                     <form action="../admin/utilisateur_ajout.php"><input type="submit" value="Ajouter un nouveau utilisateur"></form>
                 </div>
                 <div class="center-button">
-         <form action="../classes/utilisateur_liste.php"><input type="submit" value="Retour à la liste des utilisateur"></form>
+         <form action="../admin/utilisateurs_liste.php"><input type="submit" value="Retour à la liste des utilisateur"></form>
          </div>
             </body>
 

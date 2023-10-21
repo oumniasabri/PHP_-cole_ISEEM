@@ -1,6 +1,6 @@
 <?php
-include("..\inc\connection.php");
-include("..\classes\utilisateur.class.php");
+include("../inc/connection.php");
+include("../classes/utilisateur.class.php");
 
 
 $user = new Utilisateur();
@@ -11,4 +11,4 @@ $user->setMDP($_REQUEST['mdp']);
 $user->setDNaissance($_REQUEST['date-naissance']);
 
 if ($user->enregistrer($bdd))
-    header("location:..\admin\utilisateurs_liste.php");
+    header("location:../admin/utilisateurs_liste.php");

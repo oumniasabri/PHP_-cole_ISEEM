@@ -1,5 +1,5 @@
 <?php
-include("../classes/mysql.class.php"); 
+include("../classes/Mysql.class.php"); 
 
 $bdd = new Mysql();
 $bdd->setServeur("localhost");

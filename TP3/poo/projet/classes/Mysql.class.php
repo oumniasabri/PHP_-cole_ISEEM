@@ -46,4 +46,15 @@ class Mysql {
       return $res;
     }
 
+    public function deconnexion()
+    {
+        mysqli_close($this->_cnx);
+    }
+
+    // public function deconnexion2()
+    // {
+    //   $this->_cnx->close();
+    // }
+        
+
 }
