@@ -8,17 +8,31 @@
 </head>
 <body>
     <form id="form1" name="form1" method="post" action="utilisateur_ajout_action.php">
-        NOM* : 
-        <input type="text" name="nom" id="nom" required><br>
-        PRENOM* : 
-        <input type="text" name="prenom" id="prenom" required><br>
-        MAIL* : 
-        <input type="email" name="mail" id="mail" required><br>
-        PASSWORD : 
-        <input type="password" name="mdp" id="mdp"><br>
-        DATE DE NAISSANCE : 
-        <input type="date" name="date-naissance" id="date-naissance"><br>
-        <input type="submit" name="btn-ajouter" value="Ajouter">
+    <table>
+    <tr>
+        <td>NOM* : </td>
+        <td><input type="text" name="nom" id="nom" required><br></td>
+    </tr>
+    <tr>
+        <td>PRENOM* : </td>
+        <td><input type="text" name="prenom" id="prenom" required><br></td>
+    </tr>
+    <tr>
+        <td>MAIL* : </td>
+        <td><input type="email" name="mail" id="mail" required><br></td>
+    </tr>
+    <tr>
+        <td>PASSWORD : </td>
+        <td><input type="password" name="mdp" id="mdp"><br></td>
+    </tr>    
+    <tr>
+        <td>DATE DE NAISSANCE :</td> 
+        <td><input type="date" name="date-naissance" id="date-naissance"><br></td>
+    </tr>
+    <tr>
+        <td><input type="submit" name="btn-ajouter" value="Ajouter"></td>
+    </tr>
+</table>
     </form>
 
 
