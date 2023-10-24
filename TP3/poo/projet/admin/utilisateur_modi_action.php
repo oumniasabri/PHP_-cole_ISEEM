@@ -15,9 +15,9 @@ if (isset($_GET['id'])) {
             $u->setDNaissance($_POST['date-naissance']);
 
             if ($u->modifier($bdd)) {
-                echo "Modification de l'utilisateur OK.";
+                echo "User modification OK.";
             } else {
-                echo "Erreur lors de la modification de l'utilisateur.";
+                echo "Error when modifying user.";
             }
         } else {
 
@@ -26,11 +26,12 @@ if (isset($_GET['id'])) {
             <html>
 
             <head>
-                <title>Modifier un Utilisateur</title>
+                <title>Modifying a user</title>
+                <link rel="stylesheet" href="../css/modif.css">
             </head>
 
             <body>
-                <h2>Modifier un Utilisateur</h2>
+                <h2>Modify a user</h2>
                 <form id="form_modification" name="form_modification" method="post" action="utilisateur_modi_action.php?id=<?= $id ?>">
                     <input type="text" name="nom" id="nom" value="<?= $u->getNom() ?>">
                     <input type="text" name="prenom" id="prenom" value="<?= $u->getPrenom() ?>">
@@ -38,14 +39,14 @@ if (isset($_GET['id'])) {
                     <input type="text" name="mdp" id="mdp" value="<?= $u->getMDP() ?>">
                     <input type="text" name="date-naissance" id="date-naissance" value="<?= $u->getDNaissance() ?>">
                     <div class="center-button">
-                        <input type="submit" name="modifier" value="Modifier">
+                        <input type="submit" name="modifier" value="Modify">
                     </div>
                 </form>
                 <div class="center-button">
-                    <form action="../admin/utilisateur_ajout.php"><input type="submit" value="Ajouter un nouveau utilisateur"></form>
+                    <form action="../admin/utilisateur_ajout.php"><input type="submit" value="Add a new user"></form>
                 </div>
                 <div class="center-button">
-         <form action="../admin/utilisateurs_liste.php"><input type="submit" value="Retour à la liste des utilisateur"></form>
+         <form action="../admin/utilisateurs_liste.php"><input type="submit" value="Back to the list of users"></form>
          </div>
             </body>
 
@@ -53,9 +54,9 @@ if (isset($_GET['id'])) {
 <?php
         }
     } else {
-        echo "Utilisateur introuvable.";
+        echo "User not found.";
     }
 } else {
-    echo "ID de l'utilisateur non spécifié.";
+    echo "User ID not specified.";
 }
 ?>

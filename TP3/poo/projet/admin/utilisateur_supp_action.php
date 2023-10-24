@@ -9,11 +9,11 @@ if (isset($_GET['id'])) {
         if ($u->supprimer($bdd)) {
             header('location:..\admin\utilisateurs_liste.php');
         } else {
-            echo "Erreur lors de la suppression de l'utilisateur.";
+            echo "Error deleting user.";
         }
     } else {
-        echo "Utilisateur introuvable.";
+        echo "User not found.";
     }
 } else {
-    echo "ID de l'utilisateur non spécifié.";
+    echo "User ID not specified.";
 }
